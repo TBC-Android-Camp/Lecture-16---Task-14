@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GridRecyclerView App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">სახელი</string>
+    <string name="job">პროფესია</string>
+    <string name="add">დამატება</string>
+    <string name="male">კაცი</string>
+    <string name="female">ქალი</string>
+    <string name="name_start">სახელი:</string>
+    <string name="job_start">პროფესია:</string>
+    <string name="text_male_or_female">სქესი:</string>
+    <string name="change">შეცვლა</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etEditNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="10dp"
+        android:hint="@string/name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etEditJobLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEditNameLayout"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/job">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEditJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/switchEditLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEditJobLayout">
+
+        <ImageView
+            android:id="@+id/ivEditMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_male"
+            android:contentDescription="@string/male" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/genderEditSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/ivEditFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_female"
+            android:contentDescription="@string/female" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
